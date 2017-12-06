@@ -1,0 +1,27 @@
+{
+  "name": "cse477-project3",
+  "version": "1.0.0",
+  "description": "CSE477-Project3",
+  "main": "index.php",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.cse.msu.edu/wanjie/cse477-project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "qunitjs": "^1.23.1"
+  }
+}

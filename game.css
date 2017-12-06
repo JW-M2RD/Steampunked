@@ -1,0 +1,190 @@
+/*
+Look at for how to create a grid:
+https://facweb.cse.msu.edu/cbowen/cse477/project1/grid.php
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* GRID CSS */
+
+div.game {
+    display: inline-block;
+    margin: 1em auto;
+    border: thin solid black;
+    padding: 1em 0;
+}
+
+div.game div.row {
+    display: block;
+    padding: 0;
+    height: 50px;
+    white-space: nowrap;
+}
+
+div.game div.cell {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+div.cell input {
+    border: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-indent: -999px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+}
+
+/* Tile Pipe Images Background Location */
+
+.cap-e {
+    background-image: url("images/cap-e.png");
+}
+.cap-n {
+    background-image: url("images/cap-n.png");
+}
+.cap-s {
+    background-image: url("images/cap-s.png");
+}
+.cap-w {
+    background-image: url("images/cap-w.png");
+}
+
+.gauge-0 {
+    background-image: url("images/gauge-0.png");
+}
+.gauge-190 {
+    background-image: url("images/gauge-190.png");
+}
+.gauge-top-0 {
+    background-image: url("images/gauge-top-0.png");
+}
+.gauge-top-190 {
+    background-image: url("images/gauge-top-190.png");
+}
+
+.leak-e {
+    background-image: url("images/leak-e.png");
+}
+.leak-n {
+    background-image: url("images/leak-n.png");
+}
+.leak-s {
+    background-image: url("images/leak-s.png");
+}
+.leak-w {
+    background-image: url("images/leak-w.png");
+}
+
+.ninety-es {
+    background-image: url("images/ninety-es.png");
+}
+.ninety-ne {
+    background-image: url("images/ninety-ne.png");
+}
+.ninety-sw {
+    background-image: url("images/ninety-sw.png");
+}
+.ninety-wn {
+    background-image: url("images/ninety-wn.png");
+}
+
+.straight-h {
+    background-image: url("images/straight-h.png");
+}
+.straight-v {
+    background-image: url("images/straight-v.png");
+}
+
+.tee-esw {
+    background-image: url("images/tee-esw.png");
+}
+.tee-nes {
+    background-image: url("images/tee-nes.png");
+}
+.tee-swn {
+    background-image: url("images/tee-swn.png");
+}
+.tee-wne {
+    background-image: url("images/tee-wne.png");
+}
+
+.valve-closed {
+    background-image: url("images/valve-closed.png");
+}
+.valve-open {
+    background-image: url("images/valve-open.png");
+}
+
+p.message {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+p.error-message {
+    color: red;
+}
+
+input.button {
+    margin:10px;
+}
+
+.hover:hover {
+    background-color: rgba(137, 236, 145, 0.6);
+}
+
+.winner {
+    margin: 3em;
+    font-size: 30px;
+}
